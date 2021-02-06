@@ -11,7 +11,9 @@ with open("HISTORY.rst") as history_file:
     history = history_file.read()
 
 requirements = [
-    "Click>=7.0",
+    "prompt-toolkit>=3, <4",
+    "rich>=9.10, <10",
+    "typer>=0.3, <0.4",
 ]
 
 setup_requirements = []
@@ -34,7 +36,7 @@ setup(
     description="🏏 A CLI for Cricket lovers to get Live Scores, ICC Rankings, Upcoming Matches 🏏",
     entry_points={
         "console_scripts": [
-            "cricket=cricket_cli.cli:main",
+            "cricket=cricket_cli.cli:app",
         ],
     },
     install_requires=requirements,

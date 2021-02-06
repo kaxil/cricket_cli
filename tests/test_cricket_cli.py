@@ -6,7 +6,7 @@
 import unittest
 from typer.testing import CliRunner
 
-from cricket_cli import cricket_cli
+from cricket_cli import live_score
 from cricket_cli import cli
 
 

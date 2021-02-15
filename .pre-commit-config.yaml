@@ -14,4 +14,6 @@ repos:
     hooks:
     - id: black
       name: Black
+      args:
+        - "--line-length=110"
       types: [python]

@@ -11,7 +11,9 @@ with open("HISTORY.rst") as history_file:
     history = history_file.read()
 
 requirements = [
+    "beautifulsoup4>=4.9.3, <5",
     "prompt-toolkit>=3, <4",
+    "requests>=2.25.1, <3",
     "rich>=9.10, <10",
     "typer>=0.3, <0.4",
 ]
